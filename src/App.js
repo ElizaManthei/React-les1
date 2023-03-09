@@ -11,7 +11,7 @@ import brand from './assets/brand.png';
 import story from './assets/our_story.png';
 
 function App() {
-  function print (txt){
+  function printInConsole(txt){
     console.log(txt);
   }
   function productPrice(price){
@@ -34,19 +34,19 @@ function App() {
         <Button
             isDisabled = {false}
             buttonText = {navButton1Text}
-            print = {() => print(navButton1Text)}
+            print = {() => printInConsole(navButton1Text)}
         ></Button>
 
         <Button
             isDisabled = {false}
             buttonText = {navButton2Text}
-            print = {() => print(navButton2Text)}
+            print = {() => printInConsole(navButton2Text)}
         ></Button>
 
         <Button
             isDisabled = {true}
             buttonText = {navButton3Text}
-            print = {() => print(navButton3Text)}
+            print = {() => printInConsole(navButton3Text)}
         ></Button>
       </nav>
 
